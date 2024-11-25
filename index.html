@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="main.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo">
+        <ul class="nav-menu">
+            <li>BANK</li>
+            <li>BUSINESS</li>
+            <li>INVESTMENTS</li>
+            <li>INSURANCE</li>
+            <li>MOBILE</li>
+            <li>TRAVEL</li>
+            <li>ENTERTAINMENT</li>
+        </ul>
+        <span class="login-btn">LOG IN</span>
+    </header>
+    <main>
+        <section id="currency-converter">
+            <h1 class="headline">Online Currency Converter</h1>
+            <p class="error-message"></p>
+            <div class="converter-container">
+                <div class="converter-block sell">
+                    <h4 class="subtitle">I have</h4>
+                    <ul class="currency-tabs">
+                        <li class="active" data-currency="rub">RUB</li>
+                        <li data-currency="usd">USD</li>
+                        <li data-currency="eur">EUR</li>
+                        <li data-currency="gbp">GBP</li>
+                    </ul>
+                    <div class="conversion-result">
+                        <input type="text" value="0" placeholder="Enter value">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="converter-block buy">
+                    <h4 class="subtitle">I want</h4>
+                    <ul class="currency-tabs">
+                        <li data-currency="rub">RUB</li>
+                        <li class="active" data-currency="usd">USD</li>
+                        <li data-currency="eur">EUR</li>
+                        <li data-currency="gbp">GBP</li>
+                    </ul>
+                    <div class="conversion-result">
+                        <input type="text" value="0" placeholder="Enter value">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
